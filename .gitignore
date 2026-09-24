@@ -1,0 +1,12 @@
+.env
+GLMSecret.txt
+Curtail/GLMSecret.txt
+keytext*.md
+COMPETITOR_REPORT.md
+.DS_Store
+*.xcuserstate
+xcuserdata/
+DerivedData/
+build/
+*.log
+icon_raw.png

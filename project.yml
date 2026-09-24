@@ -1,0 +1,58 @@
+name: Curtail
+options:
+  bundleIdPrefix: com.zzoutuo
+  deploymentTarget:
+    iOS: "18.0"
+    watchOS: "11.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    DEVELOPMENT_TEAM: VX3Q75X27B
+    CODE_SIGN_STYLE: Automatic
+    CODE_SIGN_IDENTITY: "Apple Development"
+targets:
+  Curtail:
+    type: application
+    platform: iOS
+    sources:
+      - Curtail
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.zzoutuo.Curtail
+        TARGETED_DEVICE_FAMILY: "1,2"
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_CFBundleDisplayName: Curtail
+        INFOPLIST_KEY_NSCameraUsageDescription: "Curtail uses the camera only to scan nutrition labels for hidden sugars. Photos are analyzed and never stored."
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        CODE_SIGN_ENTITLEMENTS: Curtail/Curtail.entitlements
+    dependencies:
+      - target: CurtailWidgets
+      - target: CurtailWatch
+  CurtailWidgets:
+    type: app-extension
+    platform: iOS
+    sources:
+      - CurtailWidgets
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.zzoutuo.Curtail.widgets
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_FILE: CurtailWidgets/Info.plist
+        CODE_SIGN_ENTITLEMENTS: CurtailWidgets/CurtailWidgets.entitlements
+  CurtailWatch:
+    type: application
+    platform: watchOS
+    sources:
+      - CurtailWatch
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.zzoutuo.Curtail.watchkitapp
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_WKApplication: YES
+        INFOPLIST_KEY_WKCompanionAppBundleIdentifier: com.zzoutuo.Curtail
+        INFOPLIST_KEY_CFBundleDisplayName: Curtail
+        CODE_SIGN_ENTITLEMENTS: CurtailWatch/CurtailWatch.entitlements
