@@ -9,16 +9,16 @@
 | **Repo URL** | https://github.com/asunnyboy861/Curtail |
 | **Visibility** | Public |
 | **Primary Language** | Swift |
-| **GitHub Pages** | ⏳ Pending (enabled in PHASE 7 from `/docs` folder) |
+| **GitHub Pages** | ✅ **ENABLED** (from `/docs` folder) |
 
 ## Policy Pages (Deployed from Main Repository /docs)
 
 | Page | URL | Status |
 |------|-----|--------|
-| Landing Page | https://asunnyboy861.github.io/Curtail/ | ⏳ Pending |
-| Support | https://asunnyboy861.github.io/Curtail/support.html | ⏳ Pending |
-| Privacy Policy | https://asunnyboy861.github.io/Curtail/privacy.html | ⏳ Pending |
-| Terms of Use | https://asunnyboy861.github.io/Curtail/terms.html | ⏳ Pending (subscription app) |
+| Landing Page | https://asunnyboy861.github.io/Curtail/ | ✅ Active |
+| Support | https://asunnyboy861.github.io/Curtail/support.html | ✅ Active |
+| Privacy Policy | https://asunnyboy861.github.io/Curtail/privacy.html | ✅ Active |
+| Terms of Use | https://asunnyboy861.github.io/Curtail/terms.html | ✅ Active |
 
 ## Repository Structure
 
@@ -37,9 +37,9 @@ Curtail/
 │   └── Assets.xcassets            # App icon (Agnes generated)
 ├── CurtailWidgets/                # Widget extension: SOS widget + Live Activity
 ├── CurtailWatch/                  # watchOS wrist SOS mini app
-├── docs/                          # Policy Pages (GitHub Pages source — PHASE 7)
+├── docs/                          # Policy Pages (GitHub Pages source — DEPLOYED)
 ├── .github/workflows/
-│   └── deploy.yml                 # Pages deployment (PHASE 7)
+│   └── deploy.yml                 # Pages deployment (ACTIVE)
 ├── project.yml                    # xcodegen manifest
 ├── us.md                          # English development guide
 ├── capabilities.md                # Capabilities configuration
